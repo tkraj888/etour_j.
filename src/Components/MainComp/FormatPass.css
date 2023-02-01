@@ -1,0 +1,44 @@
+ @charset "UTF-8";
+/*@import "https://static.stayjapan.com/assets/dashboard/application-33c1a06b7784b53cd746d479718b6295c0fcefebb696e78dcee7c68efc92fada.css"; */
+.horizontal-containerr {
+  margin: 0 auto;
+  width: 100%;
+  /* Create circle */
+  /* Create line */
+  /* Custom progress bar */
+}
+@media (min-width: 768px) {
+  .horizontal-containerr {
+    width: 500px;
+  }
+}
+
+.horizontal-containerr .horizontal-formm-boxx {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  height: 400px;
+  padding: 30px;
+}
+.horizontal-containerr .horizontal-formm-boxx .horizontal-info-containerr img {
+  height: 75px;
+  margin-bottom: 20px;
+}
+.horizontal-containerr .horizontal-formm-boxx .horizontal-info-containerr .horizontal-heading {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  text-transformm: capitalize;
+}
+.horizontal-containerr .horizontal-formm-boxx .horizontal-info-containerr .horizontal-subtitle {
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.horizontal-containerr .horizontal-formm-boxx .horizontal-formm label,
+.horizontal-containerr .horizontal-formm-boxx .horizontal-formm button {
+  text-transformm: capitalize;
+}
+.horizontal-containerr .horizontal-formm-boxx .horizontal-formm label {
+  color: #000;
+  font-weight: normal;
+}

@@ -1,0 +1,43 @@
+.btn-space {
+
+    margin-left: 20px;
+    font-size: 12px;
+    /* padding-right: 50px; */
+    height: 35px;
+    width: 90px;
+    align-content: center;
+}
+.space {
+
+    margin-left: 20px;
+    font-size: 9px;
+    /* padding-right: 50px; */
+    height: 35px;
+    width: 90px;
+    align-content: center;
+}
+
+
+.srbtn {
+    margin-left: 20px;
+    font-size: 12px;
+    padding: 10px;
+    align-content: center;
+    height: 40px;
+    width: 50px;
+}
+
+.profbtn {
+    margin-right: 50px;
+    
+}
+
+.buttonn {
+    transition-duration: 0.4s;
+}
+
+.buttonn:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}

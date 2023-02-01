@@ -1,0 +1,234 @@
+import { ClassNames } from "@emotion/react";
+import { useState, useEffect } from "react";
+import React from "react";
+import './Signup.css';
+import axios from "axios";
+
+
+function Signup() {
+const initialValues = {First_Name: "", Middle_Name:"", Last_Name:"",Email:"", Phone_Number:"", Address_Line:"", Pincode:"", City:"", Country:"", password: "" };
+const [formValues, setFormValues] = useState(initialValues);
+const [formErrors, setFormErrors] = useState({});
+const [isSubmit, setIsSubmit] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+    const First_Name = e.target.First_Name.value;
+    const Middle_Name = e.target.Middle_Name.value;
+    const Last_Name = e.target.Last_Name.value;
+    const Email = e.target.Emial.value;
+    const Phone_Number = e.target.Phone_Number.value;
+    const Address_Line = e.target.Address_Line.value;
+    const Pincode = e.target.Pincode.value;
+    const City = e.target.City.value;
+    const Country = e.target.Country.value;
+    const password = e.target.username.value;
+    axios.post("   ",
+    {First_Name,
+    Middle_Name,
+    Last_Name,
+    Email,
+    Phone_Number,
+    Address_Line,
+    Pincode,
+    City,
+    Country,
+    password
+    })
+    .then((Response)=>{
+        console.log(Response);
+        ("#theForm").reset();
+      })
+      .catch((error)=>{
+        console.log.apply(error);
+      });
+    // url
+  };
+   useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(formValues);
+    }
+  }, 
+  [formErrors]);
+  const validate = (values) => {
+    const errors = {};
+    if (!values.First_Name) {
+      errors.username = "First_Name is required!";
+    }
+    if (!values.Last_Name) {
+        errors.username = "Last_Name is required!";
+      }
+    if(!values.Pincode.length===6)
+    {
+     errors.Pincode="less than 6 digit";
+    }
+    if(!values.Phone_Number.length===10)
+    {
+        errors.Phone_Number="less than 10 digit";
+    }
+    if (!values.password) {
+      errors.password = "Password is required";
+    } else if (values.password.length < 4) {
+      errors.password = "Password must be more than 4 characters";
+    } else if (values.password.length > 10) {
+      errors.password = "Password cannot exceed more than 10 characters";
+    }
+    return errors;
+  };
+
+    return(
+        
+        <div className="main">
+        <div className="sub-main">
+        <div className="name">
+            {/* {Object.keys(formErrors).length === 0 && isSubmit ? (
+        <div className="new">Signed in successfully</div>
+      ) : (
+        <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
+      )} */}
+        <from onSubmit={handleSubmit}>
+        <h2>Register</h2>
+            <div className="">
+              
+            <div>
+                <label htmlFor="First_Name" alt="name"></label>
+                <input type="text"
+                 placeholder="First Name"
+                 className="name"
+                 name="First_Name"
+                 value={formValues.First_Name}
+                 onChange={handleChange}
+                 />
+
+            </div>
+            
+            <div className="second-input">
+                <label htmlFor="Middle_Name"></label>
+                <input type="text"
+                 placeholder="Middle Name" 
+                 className="name" 
+                 name="Middle_Name"
+                 value={formValues.Middle_Name}
+                 onChange={handleChange}/>
+           </div>
+           
+            <div className="second-input">
+                <label htmlFor="Last_Name"></label>
+                <input type="text" 
+                placeholder="Last Name" 
+                className="name" 
+                name="Last_Name"
+                value={formValues.Last_Name}
+                onChange={handleChange}/>
+            </div>
+            <div className="second-input">
+                <label htmlFor="Email"></label>
+                <input type="Email" 
+                 placeholder="Email" 
+                 className="name" 
+                 name="Email"
+                 value={formValues.Email}
+                onChange={handleChange}/>
+            </div>
+            <div className="second-input">
+                <label htmlFor="Phone_Number"></label>
+                <input type="phone" 
+                placeholder="phone" 
+                className="name" 
+                name="Phone_Number"
+                value={formValues.Phone_Number}
+                onChange={handleChange}/>
+            </div>
+            <div className="second-input">
+                <label htmlFor="Address_Line"></label>
+                <input type="text" 
+                placeholder="Address_Line"
+                className="name" 
+               name="Address_Line"
+               value={formValues.Address_Line}
+                onChange={handleChange}/>
+            </div>
+            <div className="second-input">
+                <label htmlFor="Pincode"> </label>
+                <input type="text" 
+                placeholder="Pincode" 
+                className="name" 
+                name="Pincode"
+                value={formValues.Pincode}
+                onChange={handleChange}/>
+            </div>
+            <div className="second-input">
+                <label htmlFor="City"></label>
+                <input type="text" 
+                placeholder="City"
+                className="name" 
+                name="City"
+                value={formValues.City}
+                onChange={handleChange}/>
+            </div>
+            
+            {/* <div className="second-input">
+            <label for="Sex">sex</label>
+
+                   <select name="" id="Sex"  className="second-input">
+                   <option value=" ">select </option>
+                    <option value="male ">male </option>
+                    <option value="female">female</option>
+                    <option value="other">Other</option>
+    
+                    </select>
+            </div> */}
+            <div className="second-input">
+                <label htmlFor="Country"></label>
+                <input type="text" 
+                placeholder="Country"
+                className="name" 
+                name="Country"
+                value={formValues.Country}
+                onChange={handleChange}/>
+            </div>
+            <div className="second-input">
+                <label htmlFor="Password"></label>
+                <input type="Password" 
+                placeholder="Password"
+                className="name" 
+                name="Password"
+                value={formValues.Password}
+                onChange={handleChange}/>
+            </div>
+
+            {/* <div className="second-input">
+            <p>{formErrors.password}</p>
+             <input type="Password" 
+             placeholder="Password" 
+             className="name" 
+             name="Password"
+             value={formValues.Password}
+                onChange={handleChange}/>
+           </div> */}
+{/*            
+            <div className="Signup-button">
+          <button type="submit">Signup</button>
+          
+          </div> */}
+            <div className="Signup-button">
+          <p>{formErrors.password}</p>
+          <button className="Submut">Signup</button>
+          </div>
+          </div>
+        </from>
+        </div>
+        </div>
+        </div>
+        
+    )
+}
+export default Signup;

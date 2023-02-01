@@ -1,0 +1,68 @@
+.main {
+  text-align: center;
+  justify-content: center;
+  display: flex; 
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background-color: #f9fafd;
+}
+.sub-main {
+  box-sizing:box;
+  justify-content: center;
+  height: 100%;
+  width: 35%;
+  /* box-shadow: 11px 12px 13px 12px rgb(207, 207, 207); */
+  padding-top: 20px;
+  /* border-radius: 60px;  */
+  background-color: white;
+  border: 3px solid #111010;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+input{
+    width: 90%;
+    height: 60px;
+    padding-top: 20px;
+    /* border-radius: 60px;  */
+    /* box-shadow: inset 0px 0px 25px 0px #888;  */
+    /* border:s;
+    outline: none; */
+    background-color: #fff;
+}
+
+.name{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.second-input{
+    padding-top: 20px;
+    font-size: 20px;
+    width: 90%;
+}
+
+button{
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+ 
+}
+.Signup-button{
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  
+}
+
+.link{
+    font-size: 25px;
+    font-weight: 400;
+}
+ a{
+     color: blue;
+ }

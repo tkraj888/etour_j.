@@ -1,0 +1,26 @@
+
+  
+.container
+{
+    box-sizing:box;
+    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #fcad633b;
+    border: 3px solid #462c34;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif
+}
+.text1{
+    font-family:'Times New Roman', Times, serif
+
+}
+/* .mainn{
+    margin-top:100px 12px 100px 12px
+}
+     */

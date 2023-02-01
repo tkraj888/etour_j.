@@ -1,0 +1,37 @@
+#search_bar{
+    text-align: center;
+    width: 1000%;
+    height: 210px;
+}
+#search_text{
+    color: rgb(59, 24, 24);
+    text-align: left;
+    margin: 10px 50px;
+}
+#search_btn{
+    border-bottom: 5px;
+    border-color: rgba(53, 97, 77, 0.966);
+    border-style: solid;
+    margin: 10px;
+    box-shadow: 5px 10px 10px #000000;
+    
+}
+#btn_search{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.btn_margine{
+  
+    margin-top: 15px ;
+    margin-bottom: 15px;
+    margin-left: 120px;
+}
+
+#basic-addon1{
+    color: rgb(12, 11, 11);
+    font-size: 100%;
+    text-align: right;
+    margin: 10px 50px;
+    }

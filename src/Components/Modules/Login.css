@@ -1,0 +1,27 @@
+.login{
+    
+   padding: 50px 10px;
+   height: 750px;
+   
+}
+
+.loginpage{
+   width:30%;
+   border: 2px solid;
+   border-radius:20px;
+   padding-top: 30px;
+  
+   height: 480px;
+}
+.container h3{
+   color: #850E35;
+}
+.loginnames{
+   padding: 10px 20px;
+}
+.textbox{
+   border: 1px solid;
+   
+   padding: 0 10px;
+   height: 40px;
+}

@@ -1,0 +1,32 @@
+#tr{
+    padding-left: 10%;
+    text-align:justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card1{
+    box-shadow: 0 4px 8px 0 rgba(241, 8, 8, 0.2);
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    padding: 3%;
+}
+#ig{
+    
+    margin: auto;
+}
+#tr1{
+    padding-left: 10%;
+    text-align:justify;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.card2{
+    box-shadow: 0 4px 8px 0 rgba(4, 168, 160, 0.2);
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    padding: 1%;
+    
+}

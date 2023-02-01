@@ -1,0 +1,36 @@
+.registration{
+    padding: 50px 10px;
+    height: 750px;
+    
+}
+
+.regidetail{
+    width: 400px;
+    border: 2px solid;
+    border-radius:20px;
+    padding-top: 30px;
+   height: 700px;
+}
+  
+.container h3{
+    color: #850E35;
+}
+.textbox{
+    border: 1px solid;
+    
+    padding: 0 10px;
+    margin: 5px 0;
+    background-color: #E1FFEE;
+}
+.bigname{
+    padding-right: 10px;
+    
+}
+.smallname{
+    padding-right: 50px;
+    
+}
+.agename{
+    padding-right: 60px;
+    
+}

@@ -1,0 +1,17 @@
+
+.parent {
+height: 200px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.child {
+
+width: 100px;
+height: 100px;
+}
+.Bnner{ 
+     /* background-Repeat: 'no-repeat'; */
+      background-Image: url(./waterfall.png);
+    }

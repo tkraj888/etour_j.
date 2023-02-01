@@ -1,0 +1,18 @@
+img{
+    width: 100px;
+  height: 500px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+
+}
+h3{
+    color: black;
+  
+}
+h3 span {
+  background-color: #a0f1ec;
+}
+p{
+  color:black;
+  background-color: antiquewhite;
+}
